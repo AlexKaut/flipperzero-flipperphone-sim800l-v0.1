@@ -1,2 +1,2 @@
-# flipperzero-flipperphone-sim800l-v0.1
+# FlipperZero - FlipperPhone module 
 Diy sim800l GPIO module for FlipperZero. Easy build with "Iron Toner Transfer for PCB Making"
