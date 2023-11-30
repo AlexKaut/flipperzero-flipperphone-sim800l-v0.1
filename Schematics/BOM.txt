@@ -1,1 +1,6 @@
-
+Sim800l - 1 
+220uF Electrolytic capacitor (more than 5 volts) - 1 
+100n Ceramic capacitor - 1 
+Diodes - 2 (I'm choosing the best ones now) 
+2.54 Corner panel,  sockets for sim800l 
+White LED - 1 (if you want flashlight)  
