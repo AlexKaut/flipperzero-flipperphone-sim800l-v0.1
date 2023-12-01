@@ -3,6 +3,7 @@ FlipperPhone - diy SIM800l GPIO module for FlipperZero. All documentation for th
 
 # Module assembly
 ## Schematics
+/Add resistors to UART
 The first thing to start with is the SIM800L power supply. According to the specification, the module is powered by a battery, requires a voltage of 3.4-4.4 volts and can consume up to 2 amperes of current during network search! With normal activity, it consumes 20mA and only 1ma during sleep
 
 FlipperZero has a [5 volt 2 ampere line](https://miro.com/app/board/uXjVO_LaYYI=/), so there are no problems with power supply. 5 volts are lowered to the required voltage using two series-connected diodes, thus, the power supply from 5 volts is organized for the blue version of the SIM800L, you can see two diodes in the upper right corner of PCB. Also, two capacitors need to be supplied along the power supply line of the GPS module - an electrolytic 220uF and a ceramic 100n
