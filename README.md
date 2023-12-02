@@ -39,7 +39,7 @@ Put sim card in the SIM800L
 
 ![sim](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/ded0a03c-84b2-4d70-8bd3-afd6f6f51145)
 
-Put the module in the FLipper's GPIO pins. Open "GPIO" setting and turn on "5V on GPIO". Red LED will start blinking - the module is ready
+Put the module in the FLipper's GPIO pins. Open "GPIO" settings and turn on "5V on GPIO". Red LED will start blinking - the module is ready
 
 Open GPIO App "UART Terminal", choose 9600 baud rate - now you can control SIM800L with AT comands 
 
