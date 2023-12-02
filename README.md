@@ -33,4 +33,40 @@ And on the PCB, the inscription should be read correctly
 
 ![side2](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/c5f2fa90-862e-4c68-87bf-087ce7389a84)
 
+# FlipperPhone module control
+## Connection to FlipperZero 
+Put sim card in the SIM800L
+
+![sim](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/ded0a03c-84b2-4d70-8bd3-afd6f6f51145)
+
+Put the module in the FLipper's GPIO pins. Open "GPIO" setting and turn on "5V on GPIO". Red LED will start blinking - the module is ready
+
+Open GPIO App "UART Terminal", choose 9600 baud rate - now you can control SIM800L with AT comands 
+
+![9600](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/5dba9ff7-852c-48dd-b402-f770eefebd38)
+
+## AT comands
+All commands can be viewed in the [manual](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/blob/main/Schematics/SIM800L-Datasheets/SIM800L%20Series_AT%20Command%20Manual_V1.10.pdf)
+
+List of useful commands: 
+```
+AT+CPAS - module status: 0 - ready to work, 2 - unknown (command execution is not guaranteed), 3 - incoming call,
+4 - voice connection
+
+AT+CSQ - signal quality: 0 -115 dBm or less, 1 - 111 dBm, 2-30 -110..-54 dBm, 31 -52 dBm or more, 99 -unknown or no signal.
+
+AT+CCID - getting a SIM card number
+
+ATD+phonenumber; - call to a phone number, example of a command "ATD+79876543210;". Don't forget to put ";"!
+```
+**AT+CSQ**
+
+![csq](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/56a91811-5fb8-4a60-a0c9-a0f1d8751117)
+
+![csq27](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/f9ac00f1-6336-4ecd-8e1c-3fc9fb889956)
+
+
+**ATD+phonenumber;**
+
+![9876543210](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/5dbe3551-a5ee-47b3-91a5-e411586356cf)
 
