@@ -3,13 +3,16 @@ FlipperPhone - diy SIM800l GPIO module for FlipperZero. All documentation for th
 
 # Module assembly
 ## Schematics
-/Add resistors to UART
+
 The first thing to start with is the SIM800L power supply. According to the specification, the module is powered by a battery, requires a voltage of 3.4-4.4 volts and can consume up to 2 amperes of current during network search! With normal activity, it consumes 20mA and only 1ma during sleep
 
-FlipperZero has a [5 volt 2 ampere line](https://miro.com/app/board/uXjVO_LaYYI=/), so there are no problems with power supply. 5 volts are lowered to the required voltage using two series-connected diodes, thus, the power supply from 5 volts is organized for the blue version of the SIM800L, you can see two diodes in the upper right corner of PCB. Also, two capacitors need to be supplied along the power supply line of the GPS module - an electrolytic 220uF and a ceramic 100n
+FlipperZero has a [5 volt 2 ampere line](https://miro.com/app/board/uXjVO_LaYYI=/), so this is enough to power SIM800L. 5 volts are lowered to the required voltage using two series-connected diodes, thus, the power supply from 5 volts is organized for the blue version of the SIM800L, you can see two diodes in the upper right corner of PCB. Also, two capacitors need to be supplied along the power supply line of the GPRS module - an electrolytic 220uF and a ceramic 100n
 
 ![SIm800Lblue](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/898ec7bc-49b6-4a43-950d-aee6c6aef073)
 
+**Lowering the voltage using two diodes is a rather unstable solution. It is very important to select diodes based on current strength and voltage drop, but even this does not guarantee a stable output voltage** 
+
+In this board, I limited myself to a solution with two diodes, since it takes up minimal space, and the printed circuit board is single-sided and designed for home production. I didn’t encounter any critical problems during the module tests, but it’s still important to remember this point. **Write if you know convenient alternatives, please.** The advanced version of the module will have a step-down stabilizer
 
 ## PCB 
 The PCB and the schematic are drawn in the EasyEDA. The current PCB is designed for self-made production, therefore, the board is one-sided, I used the toner transfer method to make my own. Don't forget to solder the jumer!!! Blue is the lower layer, red is the upper layer. We transfer the blue to the textolite, and solder the red track as a jumper
