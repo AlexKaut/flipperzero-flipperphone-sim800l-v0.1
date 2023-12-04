@@ -67,8 +67,22 @@ ATD+phonenumber; - call to a phone number, example of a command "ATD+79876543210
 
 ![csq27](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/f9ac00f1-6336-4ecd-8e1c-3fc9fb889956)
 
-
 **ATD+phonenumber;**
 
 ![9876543210](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/5dbe3551-a5ee-47b3-91a5-e411586356cf)
+
+## Radio mode 
+
+The SIM800L has the ability to work in radio mode, control is performed via AT commands, and sound is output to the speaker
+
+### Radio AT comands
+```
+AT+FMOPEN=0 - turn radio mode ON
+AT+FMVOLUME=6 - volume selection from 0 to 6
+AT+FMSCAN - auto scan of the FM band
+AT+FMFREQ=960 - radio frequency selection, range 875-1080, 10x frequency in MHz
+
+
+
+
 
