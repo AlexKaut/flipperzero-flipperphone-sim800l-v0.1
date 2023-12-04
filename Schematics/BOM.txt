@@ -2,6 +2,8 @@ Sim800l - 1
 220uF Electrolytic capacitor (more than 5 volts) - 1 
 100n Ceramic capacitor - 1 
 Diodes - 2 (I'm choosing the best ones now)
+Resistor 1k - 1
+Resistor 5.6k - 1
 Microphone - 1
 Speaker - 1
 2.54 Corner panel,  sockets for sim800l 
