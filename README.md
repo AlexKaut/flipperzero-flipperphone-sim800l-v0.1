@@ -15,9 +15,10 @@ FlipperZero has a [5 volt 2 ampere line](https://miro.com/app/board/uXjVO_LaYYI=
 In this board, I limited myself to a solution with two diodes, since it takes up minimal space, and the printed circuit board is single-sided and designed for home production. I didn’t encounter any critical problems during the module tests, but it’s still important to remember this point. **Write if you know convenient alternatives, please.** The advanced version of the module will have a step-down stabilizer
 
 ## PCB 
-The PCB and the schematic are drawn in the EasyEDA. The current PCB is designed for self-made production, therefore, the board is one-sided, I used the toner transfer method to make my own. Don't forget to solder the jumer!!! Blue is the lower layer, red is the upper layer. We transfer the blue to the textolite, and solder the red track as a jumper
+The PCB and the schematic are drawn in the EasyEDA. The current PCB is designed for self-made production, therefore, the board is one-sided, I used the toner transfer method to make my own. Blue is the lower layer, we transfer it to the textolite
 
-![PCB](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/2d756ae5-2529-473b-b3e0-5352bc1ab734)
+![PCB2](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/50a10d77-6204-4329-8fe1-0a3240624f01)
+
 
 Use the following settings for the print file
 
@@ -50,10 +51,11 @@ All commands can be viewed in the [manual](https://github.com/AlexKaut/flipperze
 
 List of useful commands: 
 ```
-AT+CPAS - module status: 0 - ready to work, 2 - unknown (command execution is not guaranteed), 3 - incoming call,
-4 - voice connection
+AT+CPAS - module status: 0 - ready to work, 2 - unknown (command execution is not guaranteed), 
+3 - incoming call, 4 - voice connection
 
-AT+CSQ - signal quality: 0 -115 dBm or less, 1 - 111 dBm, 2-30 -110..-54 dBm, 31 -52 dBm or more, 99 -unknown or no signal.
+AT+CSQ - signal quality: 0 -115 dBm or less, 1 - 111 dBm, 2-30 -110..-54 dBm, 31 -52 dBm or more,
+99 -unknown or no signal.
 
 AT+CCID - getting a SIM card number
 
