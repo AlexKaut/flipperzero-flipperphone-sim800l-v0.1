@@ -1,6 +1,11 @@
 # FlipperZero - FlipperPhone module 
 FlipperPhone - diy SIM800l GPIO module for FlipperZero. All documentation for the SIM 800 l is [in the folder](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/tree/main/Schematics/SIM800L-Datasheets). 
 
+![ИТОГ](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/0cd3ae3b-704e-49f0-8c42-808af525e918)
+
+
+https://youtu.be/eFofI0v5RhA?si=0sd0RvA5URh4ZR1d
+
 # Module assembly
 ## Schematics
 
