@@ -1,4 +1,4 @@
-# FlipperZero - FlipperPhone module 
+# FlipperZero - FlipperPhone module V0.1
 FlipperPhone - diy SIM800l GPIO module for FlipperZero. All documentation for the SIM 800 l is [in the folder](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/tree/main/Schematics/SIM800L-Datasheets). 
 
 ![ИТОГ](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/0cd3ae3b-704e-49f0-8c42-808af525e918)
@@ -86,6 +86,7 @@ AT+FMOPEN=0 - turn radio mode ON
 AT+FMVOLUME=6 - volume selection from 0 to 6
 AT+FMSCAN - auto scan of the FM band
 AT+FMFREQ=960 - radio frequency selection, range 875-1080, 10x frequency in MHz
+AT+FMSIGNAL=960 - returns the signal strength at that frequency, but dips the audio
 
 
 
