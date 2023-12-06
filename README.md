@@ -78,7 +78,15 @@ ATD+phonenumber; - call to a phone number, example of a command "ATD+79876543210
 
 ## Radio mode 
 
-The SIM800L has the ability to work in radio mode, control is performed via AT commands, and sound is output to the speaker
+The SIM800L has the ability to work in radio mode, control is performed via AT commands, and sound is output to the speaker. 
+
+**Warning!** The Red PCB SIM800L module does not have a pin for connecting an FM antenna! I couldn't catch a legible radio signal without an antenna. But there are videos on the Internet where people manage to catch the radio without an antenna. So you can try to catch the radio using the specified AT commands - if there is only noise, you will have to shove the antenna, if the radio is working - cool, you are very lucky!
+
+[RU article about antenna connection](http://imenin.net.by/stm.php) - photos and instructions are taken from there
+
+![SIM800_pins](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/1a7d4004-3fb8-48bf-a960-b10ae4d876d8)
+
+![Sim_fm2](https://github.com/AlexKaut/flipperzero-flipperphone-sim800l-v0.1/assets/86695572/c7006f73-3052-4bc1-847b-56c93492d4e9)
 
 ### Radio AT comands
 ```
