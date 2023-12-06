@@ -95,6 +95,7 @@ AT+FMVOLUME=6 - volume selection from 0 to 6
 AT+FMSCAN - auto scan of the FM band
 AT+FMFREQ=960 - radio frequency selection, range 875-1080, 10x frequency in MHz
 AT+FMSIGNAL=960 - returns the signal strength at that frequency, but dips the audio
+AT+FMCLOSE - turn radio mode OFF
 
 
 
